@@ -1,0 +1,53 @@
+create database user_authentication_db;
+
+use user_authentication_db;
+
+1) users Table Schema:
+
+    CREATE TABLE users (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    First_Name VARCHAR(255),
+    Last_Name VARCHAR(255),
+    Gender VARCHAR(10),
+    Mobile_No VARCHAR(15),
+    Email_ID VARCHAR(255),
+    Role VARCHAR(20),
+    User_Name VARCHAR(255),
+    Password VARCHAR(255)
+);
+
+2) bus_route Table Schema:
+
+   CREATE TABLE bus_route (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Source_city VARCHAR(255),
+    Source_state VARCHAR(255),
+    Destination_city VARCHAR(255),
+    Destination_state VARCHAR(255),
+    Fare_adult DECIMAL(10, 2),
+    Fare_child DECIMAL(10, 2),
+    Journey_duration TIME,
+    Departure_time TIME
+);
+
+3) ticket_booking Table Schema
+
+CREATE TABLE ticket_booking (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Full_Name VARCHAR(255),
+    Gender VARCHAR(10),
+    Mobile_No VARCHAR(15),
+    Email_ID VARCHAR(255),
+    Customer_Name VARCHAR(255),
+    Booking_Date DATE,
+    Booking_Time TIME,
+    Total_Amount DECIMAL(10, 2),
+    Status VARCHAR(20),
+    Payment_Method VARCHAR(50),
+    Duration_Minutes INT,
+    Source_City VARCHAR(255),
+    Destination_City VARCHAR(255),
+    Passenger_Age INT,
+    Passenger_Gender VARCHAR(10),
+    Passenger_Email VARCHAR(255)
+);
