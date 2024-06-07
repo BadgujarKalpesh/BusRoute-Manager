@@ -24,9 +24,4 @@ A full-featured Bus Booking App developed to manage bus bookings efficiently. Th
 - **Backend**: Node.js, Express.js
 - **Database**: MySQL
 
-## Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/bus-booking-app.git
 
